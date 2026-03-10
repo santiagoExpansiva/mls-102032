@@ -4,6 +4,7 @@ import { IAgentAsync, IAgentMeta } from '/_100554_/l2/aiAgentBase.js';
 import { getTemporaryContext } from '/_100554_/l2/aiAgentHelper.js';
 import { executeBeforePrompt, loadAgent } from '/_100554_/l2/aiAgentOrchestration.js';
 
+
 export function createAgent(): IAgentAsync {
     return {
         agentName: "agentTextExtractor",
