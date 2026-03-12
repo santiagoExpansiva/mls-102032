@@ -29,11 +29,17 @@ export const requires: mls.l2.enhancement.IRequire[] = [
         ref: "https://cdn.jsdelivr.net/npm/lit@3.0.0/decorators/+esm",
     },
     {
+        type: "link",
+        name: "fontAwesome",
+        ref: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css',
+        rel: 'stylesheet',
+    },
+    {
         type: "import",
         name: "tailwind.js",
         ref: "https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4",
     }
-];
+] as any;
 
 export const getDefaultHtmlExamplePreview = (modelTS: mls.editor.IModelTS): string => {
     const { project, shortName, folder } = modelTS.storFile;
